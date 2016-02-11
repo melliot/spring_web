@@ -62,21 +62,33 @@
             <version>1.11.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+        </dependency>
 
     </dependencies>
 
     <repositories>
+
         <repository>
-            <id>spring-releases</id>
-            <url>https://repo.spring.io/libs-release</url>
+            <id>org.jboss.repository.releases</id>
+            <name>JBoss Maven Release Repository</name>
+            <url>https://repository.jboss.org/nexus/content/repositories/releases</url>
         </repository>
+
     </repositories>
+
     <pluginRepositories>
         <pluginRepository>
             <id>spring-releases</id>
             <url>https://repo.spring.io/libs-release</url>
         </pluginRepository>
-    </pluginRepositories>
 
+    </pluginRepositories>
 
 </project>
